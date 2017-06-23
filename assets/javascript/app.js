@@ -74,7 +74,7 @@ $(document).ready(function() {
 				console.log(posLat);
 				console.log(posLng);
 				//reverse geocoding to obtain zip code
-				var zipCodeURL = "http://maps.googleapis.com/maps/api/geocode/json?latlng=" + posLat + "," + posLng + "&sensor=true";
+				var zipCodeURL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + posLat + "," + posLng + "&sensor=true";
 			  	//console.log(zipCodeURL);
 				$.ajax({
 					url: zipCodeURL,
