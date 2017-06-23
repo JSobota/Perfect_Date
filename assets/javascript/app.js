@@ -152,7 +152,7 @@ $(document).ready(function() {
 	$("#movieImage").on("click", function() {
 		movieChosen = true;
 		var date = moment().format("YYYY-MM-DD");
-		var gracenoteQueryURL = "http://data.tmsapi.com/v1.1/movies/showings" + "?startDate=" + date + "&zip=" + zipCode + "&api_key=" + movieAPIkey;
+		var gracenoteQueryURL = "https://data.tmsapi.com/v1.1/movies/showings" + "?startDate=" + date + "&zip=" + zipCode + "&api_key=" + movieAPIkey;
 		$.ajax({
 			url: gracenoteQueryURL,
 			method: "GET"
@@ -351,7 +351,7 @@ $(document).ready(function() {
 	    else {
 	    	if (movieChosen) {
 	    		var date = moment().format("YYYY-MM-DD");
-	    		var gracenoteQueryURL = "http://data.tmsapi.com/v1.1/movies/showings" + "?startDate=" + date + "&zip=" + zipCodeManual + "&api_key=" + movieAPIkey;
+	    		var gracenoteQueryURL = "https://data.tmsapi.com/v1.1/movies/showings" + "?startDate=" + date + "&zip=" + zipCodeManual + "&api_key=" + movieAPIkey;
 	    		$.ajax({
 	    			url: gracenoteQueryURL,
 	    			method: "GET"
